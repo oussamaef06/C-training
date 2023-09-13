@@ -8,6 +8,7 @@ float size = 18.5;
 bool a = true;
 bool b = false;
 
+
 int main(){
 	printf("Nom : %s\nsize : %f\na : %d\nb : %d\n", nom, size, a, b);
 	printf("age : ");

@@ -11,10 +11,10 @@ printf("entrer y :");
 scanf("%d",&y);
 
 if (x>y){
-printf("x est plus grand de y");
+printf("x est plus grand de y \n");
 }
 else {
-printf("y est plus grand de x"):
+printf("y est plus grand de x \n");
 }
 
 return 0;

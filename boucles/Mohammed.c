@@ -6,7 +6,7 @@ int main() {
    int nomber_multiplication, i;
 
    //mon programme du multiplication
-   printf("Bonjour sur  calculata\n");
+   printf("Bonjour sur  calculata!\n");
    printf("tu vas fais un  mutiplication: [Oui/No]\n");
    scanf("%s", choix);
     if(2 == 2) {

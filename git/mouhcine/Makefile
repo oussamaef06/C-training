@@ -1,15 +1,19 @@
 run:
-	gcc mouhcine.c -o file.out && ./file.out
+	@gcc mouhcine.c -o file.out && ./file.out
 clean:
-	 rm file.out
+	 @rm file.out
 
 push: commit
-	git push
+	@git push
 
 commit: add
-	git commit -m "$(MSG)"
+	@git commit -m "$(MSG)"
 
 add:
-	git add .
-debug:
-	printf $(MSC)
+	@git add .
+
+pull: fetch
+	@git pull
+
+fetch:
+	@git fetch

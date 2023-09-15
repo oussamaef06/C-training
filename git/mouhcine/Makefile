@@ -1,12 +1,15 @@
 run:
-        gcc Mohammed.c -o program && ./program
+	gcc mouhcine.c -o file.out && ./file.out
 clean:
-         rm pragram .Mohammed.c.swp
+	 rm file.out
+
 push: commit
-        git push
+	git push
+
 commit: add
-        git commit -m "$(MSG)"
+	git commit -m "$(MSG)"
+
 add:
-        git add .
+	git add .
 debug:
-        printf $(MSC)
+	printf $(MSC)

@@ -25,7 +25,7 @@ int main() {
     scanf("%d", &tab[inc]);
   }
 
-  reuse(0, Siz, tab);
+  bullet(0, Siz, tab);
 
   printf("Le tableau trie: ");
   for (int inc = 0; inc < Siz; inc++) {

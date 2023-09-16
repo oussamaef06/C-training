@@ -17,21 +17,20 @@ int main() {
 
   printf("Donnez la taille du tableau: ");
   scanf("%d", &Siz);
-  
+
   int tab[Siz];
-  
+
   for (int inc = 0; inc < Siz; inc++) {
     printf("Donnez la valeur numero %d: ", inc + 1);
     scanf("%d", &tab[inc]);
   }
-  
+
   reuse(0, Siz, tab);
-  
+
   printf("Le tableau trie: ");
   for (int inc = 0; inc < Siz; inc++) {
     printf("%d \n ", tab[inc]);
   }
-  
+
   return 0;
 }
-

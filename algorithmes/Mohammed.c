@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void reuse(int inc, int Siz, int tab[]) {
+void bullet(int inc, int Siz, int tab[]) {
   for (inc = 0; inc < Siz; inc++) {
     for (int j = 0; j < Siz - inc - 1; j++) {
       if (tab[j] > tab[j + 1]) {
@@ -29,7 +29,7 @@ int main() {
   
   printf("Le tableau trie: ");
   for (int inc = 0; inc < Siz; inc++) {
-    printf("%d ", tab[inc]);
+    printf("%d \n ", tab[inc]);
   }
   
   return 0;

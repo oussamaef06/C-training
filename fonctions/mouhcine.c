@@ -17,7 +17,7 @@ int ft_max(int a, int b)
 
 int main()
 {
-	int t[4];
+	int t[4] = {};
 
 	printf("entrer 4 nombre :\n");
 	for (int i = 0; i < 4; i++){

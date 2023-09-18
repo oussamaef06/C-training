@@ -23,14 +23,29 @@ double pown(double p, double p1) {
     return count;
 }
 
-int sqrtn(int s) {
-    for(int i = 1; i < s; i++) {
-        if((i * i) == s){
-            s = i;
-            continue;
+float sqrtn(float  s) {
+    float approx, better;
+    while(s < 0) {
+        printf("donnez un nombre positif: ");
+        scanf("%f", &s);
+    }
+    if(s == 0) {
+	return 0;
+    }
+    else {
+        approx = s / 2;
+
+        while(1) {
+            better = (approx + s / approx) / 2;
+	    float fb = (approx - better) * (-1);
+            if(fb < 0.00001) {
+                return better;
+            }
+
+            approx = better;
         }
     }
-    return s;
+
 }
 
 double calculation(double num1, double num2, const char *operator) {
@@ -67,11 +82,14 @@ int main() {
         }
 
         if(strcmp(operator, "sqrt") == 0){
-            int sqrt1;
-            printf("Veuillez entrer le nombre sur lequel vous souhaitez effectuer la racine carree: ");
-            scanf("%d", &sqrt1);
-            printf("Le resultat est: %d\n", sqrtn(sqrt1));
-        }
+            float num;
+	    printf("Veuillez entrer le nombre sur lequel vous souhaitez effectuer la racine carrée: ");
+     	    scanf("%f", &num);
+
+       	     int result = sqrtn(num);
+
+             printf("Le résultat est: %d\n", result);
+    	}
 
         else if((strcmp(operator, "pow") && strcmp(operator, "sqrt")) != 0){
             double num1, num2;
